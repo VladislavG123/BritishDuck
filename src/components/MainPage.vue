@@ -88,7 +88,7 @@ export default {
                 words = JSON.parse(localStorage.words)
             }
             if (this.requestLang == 'Русский') {
-            words.push({
+                words.push({
                     rus: this.responseText,
                     eng: $('#responseTextarea').val()
                 })  
@@ -124,6 +124,7 @@ input, button, textarea {outline:none;}
 body{
     height: 100vh;
 }
+
 .toLogin{
     margin: auto 0;
     margin-right: 10px;
@@ -221,5 +222,52 @@ nav {
     width: 35%;
 }
 
+
+@media (orientation: portrait) {    
+
+    .toLogin{
+        font-size: 30px;
+    }   
+
+    .translater{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;    
+
+    }   
+
+    .type-box{
+        width: 80%;
+    }   
+
+    textarea {
+        resize: none;
+        width: 100%;
+        height: 300px;
+        font-size: 20px;
+        margin-top: 10px;
+    }   
+
+    .translater h3{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        display: flex;
+        justify-content: center;
+        letter-spacing: 2px;
+        font-size: 40px;
+    }   
+
+    .edit-block{
+        margin-top: 50px;
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: 30px;
+    }   
+    
+
+}
 
 </style>

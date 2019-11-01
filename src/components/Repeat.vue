@@ -154,4 +154,43 @@ i{
     letter-spacing: 2px;
 }
 
+
+
+
+@media (orientation: portrait) {
+    .toLogin{
+        font-size: 30px;
+    }
+
+    h3{
+        font-size: 70px;
+    }
+
+    h4{
+        font-size: 50px;
+    }
+
+    .content input{
+       width: 60%;
+       height: 70px;
+       border: 2px solid #f7e085;
+       font-size: 40px;
+       letter-spacing: 2px;
+       font-style: italic;
+       text-align: center;
+    }
+
+    
+    .content button{
+        margin-top: 20px; 
+        margin-right: 10px;
+        height: 70px;
+        width: 40%;
+        font-size: 45px;
+        border: 2px solid #ffde59;
+        background: transparent;    
+        transition: 1s;
+    }
+}
+
 </style>
